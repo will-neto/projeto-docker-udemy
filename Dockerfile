@@ -3,7 +3,7 @@
 # FROM => define a imagem base 
 
 # RUN/COPY/ADD/etc => comandos que modificam o sistema de arquivos, o Docker (1) cria um contêiner temporário para execução, (2) gera uma nova camada na imagem com as mudanças
-#                       feitas pelo comando e (3) descarta o contêiner temporário, mas as alterações são preservadas na imagem
+#                       feitas pelo comando e (3) descarta o contêiner temporário, mas as alterações são anexadas (4) a imagem
 
 # Se uma camada não tem alteração, o Docker reutiliza camadas por meio de cache
 
